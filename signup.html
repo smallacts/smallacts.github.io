@@ -47,77 +47,33 @@ __wm.bt(750,27,25,2,"web","http://smallactsmanifesto.org/signup","20150502062920
 
 <h3>Get involved</h3>
 
-<form action="." method="POST">
-  <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="2Xqlzy3cVrBmRIfFummMk7wpax3wr7Em"></div>
-
-  
-    <div class="formRow">
-    
-      <label for="id_name">Name</label>
-    
-      <p class="help"><small>Your name to be shown on the signatories list.</small></p>
-      <input id="id_name" type="text" name="name" maxlength="200">
-      
-    </div>
-  
-    <div class="formRow">
-    
-      <label for="id_email">E-mail</label>
-    
-      <p class="help"><small>We need it to send you a confirmation email. <em>We'll not use it in any other way.</em></small></p>
-      <input id="id_email" type="text" name="email" maxlength="75">
-      
-    </div>
-  
-    <div class="formRow">
-    
-      <label for="id_url">Url</label>
-    
-      <p class="help"><small>This will be linked to you name on the signatories list. <em>This field is optional.</em></small></p>
-      <input id="id_url" type="text" name="url" maxlength="200">
-      
-    </div>
-  
-    <div class="formRow">
-    
-      <label for="id_location">Location</label>
-    
-      <p class="help"><small>Where are you from? <em>This field is optional.</em></small></p>
-      <input id="id_location" type="text" name="location" maxlength="200">
-      
-    </div>
-  
-    <div class="formRow">
-    
-      <p class="help"><small>Just a small act to prevent spam. <em>Sorry about this!</em></small></p>
-      <script type="text/javascript">
-    var DjangoRecaptchaOptions = {
-  "lang": "en",
-  "theme": "white"
-};
-    if (typeof RecaptchaOptions !== 'object') {
-        RecaptchaOptions = DjangoRecaptchaOptions;
-    } else {
-        for (key in DjangoRecaptchaOptions) {
-            RecaptchaOptions[key] = DjangoRecaptchaOptions[key];
-        }
-    }
-</script>
-<script type="text/javascript" src="resources/challenge.html"></script>
-<noscript>
-  <iframe src="https://web.archive.org/web/20150502062920if_/https://www.google.com/recaptcha/api/noscript?k=6LeGKt8SAAAAAAoTnG3uIWSDm4TD11tSp1xXjPAF&amp;hl=en" height="300" width="500" frameborder="0"></iframe><br/>
-  <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
-  <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
-</noscript>
-
-      
-    </div>
-  
-    <div class="formRow">
-      <input type="submit" class="btnWhite" value="Send">
-    </div>
+        <form
+  action="https://formspree.io/f/xankbwll"
+  method="POST"
+>
+  <label>
+    Name:<br/>
+    <input name="name"></textarea>
+  </label>
+    <br/><br/>
+    <label>
+    Email:<br/>
+    <input type="email" name="email">
+  </label>
+  <br/><br/>
+    URL:<br/>
+    <input  name="url">
+  </label>
+  <br/><br/>
+    Location:<br/>
+    <input  name="location">
+  </label>
+  <br/><br/>
+  <button type="submit">Send</button>
 </form>
-
+        
+        
+        
 
     </div>
     
